@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42" started-at="2019-08-14T02:36:52Z" finished-at="2019-08-14T02:36:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42" started-at="2019-08-14T02:36:52Z" finished-at="2019-08-14T02:36:52Z">
+      <class name="com.cpb.base.Testing">
+        <test-method status="PASS" signature="check()[pri:0, instance:com.cpb.base.Testing@7823a2f9]" name="check" duration-ms="16" started-at="2019-08-14T02:36:52Z" finished-at="2019-08-14T02:36:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+      </class> <!-- com.cpb.base.Testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
