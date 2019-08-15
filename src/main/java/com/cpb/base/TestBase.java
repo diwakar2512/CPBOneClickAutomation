@@ -11,16 +11,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-//import org.testng.annotations.*;
 //import com.aventstack.extentreports.*;
-//import com.relevantcodes.extentreports.ExtentReports;
-//import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.cpb.utilities.ExcelReader;
-//import com.cpb.utilities.ExtentManager;
-
+import com.cpb.utilities.ExtentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -31,8 +30,8 @@ public class TestBase {
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\com\\cpb\\testdata\\testdata.xlsx");
 	public static WebDriverWait wait;
-	//public ExtentReports rep = ExtentManager.getInstance();
-	//public static ExtentTest test;
+	public ExtentReports rep = ExtentManager.getInstance();
+	public static ExtentTest test;
 	public static String browser;
 
 	@BeforeSuite
@@ -80,9 +79,14 @@ public class TestBase {
 				
 			} else if (config.getProperty("browser").equals("ie")) {
 				WebDriverManager.iedriver().setup();
+				 DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+				 caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+
+				  // Initialize InternetExplorerDriver Instance using new capability.
+				  //WebDriver driver = new InternetExplorerDriver(caps);
 				//System.setProperty("webdriver.ie.driver",
 						//System.getProperty("user.dir") + "\\src\\test\\resources\\com\\cpb\\executables\\IEDriverServer.exe");
-				driver = new InternetExplorerDriver();
+				driver = new InternetExplorerDriver(caps);
 
 			}
 
@@ -102,6 +106,6 @@ public class TestBase {
 			driver.quit();
 		}
 
-		log.debug("test execution completed !!!");
+		log.debug("Execution completed !!!");
 	}
 }

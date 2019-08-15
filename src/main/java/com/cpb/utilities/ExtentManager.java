@@ -1,10 +1,11 @@
 package com.cpb.utilities;
 
 import java.io.File;
-import com.aventstack.extentreports.*;
+import com.relevantcodes.extentreports.*;
+//import com.aventstack.extentreports.*;
 //import com.aventstack.extentreports.*;
 //import com.aventstack.extentreports.DisplayOrder;
-import com.aventstack.extentreports.ExtentReports;
+//import com.aventstack.extentreports.ExtentReports;
 
 public class ExtentManager {
 	
@@ -16,9 +17,10 @@ public class ExtentManager {
 		if(extent==null){
 			
 			
-			//extent = new ExtentReports(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\extent.html",true,DisplayOrder.OLDEST_FIRST);
+			extent = new ExtentReports(System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\extent.html",true,DisplayOrder.OLDEST_FIRST);
+			extent.loadConfig(new File(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\cpb\\extentconfig\\ReportsConfig.xml"));
+			//extent = new ExtentReports();
 			//extent.loadConfig(new File(System.getProperty("user.dir")+"\\src\\test\\resources\\com\\cpb\\extentconfig\\ReportsConfig.xml"));
-			
 		}
 		
 		return extent;

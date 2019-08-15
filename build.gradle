@@ -31,7 +31,11 @@ dependencies {
    // https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans
 	compile group: 'org.apache.xmlbeans', name: 'xmlbeans', version: '3.0.2'
 	// https://mvnrepository.com/artifact/com.aventstack/extentreports
-	compile group: 'com.aventstack', name: 'extentreports', version: '4.0.9'
+	//compile group: 'com.aventstack', name: 'extentreports', version: '3.1.5'
+	
+	// https://mvnrepository.com/artifact/com.relevantcodes/extentreports
+	compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
+	
 	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
 	//compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
 	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
@@ -52,6 +56,14 @@ dependencies {
 	
    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver
  	compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: '2.23.0'
+ 	
+ 	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-ie-driver', version: '3.141.59'
+	
+	// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
+	compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '3.141.59'
+	
+ 	
    // https://mvnrepository.com/artifact/com.google.guava/guava
 	compile group: 'com.google.guava', name: 'guava', version: '27.1-jre'
    
