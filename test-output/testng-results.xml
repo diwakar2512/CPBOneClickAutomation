@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42" started-at="2019-08-14T02:36:52Z" finished-at="2019-08-14T02:36:52Z">
+  <suite name="Default suite" duration-ms="30" started-at="2019-08-15T20:41:08Z" finished-at="2019-08-15T20:41:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42" started-at="2019-08-14T02:36:52Z" finished-at="2019-08-14T02:36:52Z">
-      <class name="com.cpb.base.Testing">
-        <test-method status="PASS" signature="check()[pri:0, instance:com.cpb.base.Testing@7823a2f9]" name="check" duration-ms="16" started-at="2019-08-14T02:36:52Z" finished-at="2019-08-14T02:36:52Z">
+    <test name="Default test" duration-ms="30" started-at="2019-08-15T20:41:08Z" finished-at="2019-08-15T20:41:08Z">
+      <class name="com.cpb.utilities.Utilities">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cpb.utilities.Utilities@2de23121]" name="setUp" is-config="true" duration-ms="10578" started-at="2019-08-15T16:40:57Z" finished-at="2019-08-15T16:41:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cpb.utilities.Utilities@2de23121]" name="tearDown" is-config="true" duration-ms="1073" started-at="2019-08-15T16:41:08Z" finished-at="2019-08-15T16:41:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.cpb.utilities.Utilities -->
+      <class name="com.cpb.testcases.LoginTest">
+        <test-method status="PASS" signature="check()[pri:0, instance:com.cpb.testcases.LoginTest@63475ace]" name="check" duration-ms="9" started-at="2019-08-15T16:41:08Z" finished-at="2019-08-15T16:41:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check -->
-      </class> <!-- com.cpb.base.Testing -->
+      </class> <!-- com.cpb.testcases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

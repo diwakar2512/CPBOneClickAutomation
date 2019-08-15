@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\diwakuma\AppData\Local\Temp\testng-eclipse--1615868792\testng-customsuite.xml</span>
+                    <span>C:\Users\diwakuma\AppData\Local\Temp\testng-eclipse--27065791\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cpb.base.Testing" hash-for-method="check">check</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.cpb.testcases.LoginTest" hash-for-method="check">check</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.cpb.base.Testing</span>
+              <span class="class-name">com.cpb.testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -135,24 +135,27 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\diwakuma\AppData\Local\Temp\testng-eclipse--1615868792\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\diwakuma\AppData\Local\Temp\testng-eclipse--27065791\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.cpb.testcases.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.cpb.utilities.Utilities&quot;/&gt;
+      &lt;class name=&quot;com.cpb.base.TestBase&quot;/&gt;
+      &lt;class name=&quot;com.cpb.pages.ScenarioPage&quot;/&gt;
+      &lt;class name=&quot;com.cpb.utilities.TestConfig&quot;/&gt;
       &lt;class name=&quot;com.cpb.pages.MainPage&quot;/&gt;
+      &lt;class name=&quot;com.cpb.utilities.ExtentManager&quot;/&gt;
       &lt;class name=&quot;com.cpb.utilities.ExcelReader&quot;/&gt;
-      &lt;class name=&quot;com.cpb.base.Testing&quot;/&gt;
       &lt;class name=&quot;com.cpb.pages.LoginPage&quot;/&gt;
       &lt;class name=&quot;com.cpb.testcases.NonMonScenarioTest&quot;/&gt;
-      &lt;class name=&quot;com.cpb.pages.ScenarioPage&quot;/&gt;
       &lt;class name=&quot;com.cpb.testcases.MainScreenTest&quot;/&gt;
-      &lt;class name=&quot;com.cpb.utilities.TestUtil&quot;/&gt;
+      &lt;class name=&quot;com.cpb.utilities.MonitoringMail&quot;/&gt;
       &lt;class name=&quot;com.cpb.testcases.ScenarioTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -167,7 +170,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (10 classes)</span>
+                <span class="test-name">Default test (13 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,13 +199,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'check')
-data.setCell(0, 2, 'com.cpb.base.Testing')
-data.setCell(0, 3, 16);
+data.setCell(0, 2, 'com.cpb.testcases.LoginTest')
+data.setCell(0, 3, 9);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 9 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -217,9 +220,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cpb.base.TestBase</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -228,11 +240,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.cpb.base.Testing</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.cpb.utilities.Utilities</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cpb.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">check</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">10596 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cpb.utilities.Utilities</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10662 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
