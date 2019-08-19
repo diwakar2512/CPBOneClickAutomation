@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23" started-at="2019-08-15T22:45:20Z" finished-at="2019-08-15T22:45:20Z">
+  <suite name="Default suite" duration-ms="33" started-at="2019-08-19T19:09:42Z" finished-at="2019-08-19T19:09:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23" started-at="2019-08-15T22:45:20Z" finished-at="2019-08-15T22:45:20Z">
+    <test name="Default test" duration-ms="33" started-at="2019-08-19T19:09:42Z" finished-at="2019-08-19T19:09:42Z">
       <class name="com.cpb.utilities.Utilities">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cpb.utilities.Utilities@2accdbb5]" name="setUp" is-config="true" duration-ms="7749" started-at="2019-08-15T18:45:12Z" finished-at="2019-08-15T18:45:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.cpb.utilities.Utilities@306f16f3]" name="setUp" is-config="true" duration-ms="9085" started-at="2019-08-19T15:09:33Z" finished-at="2019-08-19T15:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cpb.utilities.Utilities@2accdbb5]" name="tearDown" is-config="true" duration-ms="531" started-at="2019-08-15T18:45:20Z" finished-at="2019-08-15T18:45:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cpb.utilities.Utilities@306f16f3]" name="tearDown" is-config="true" duration-ms="871" started-at="2019-08-19T15:09:42Z" finished-at="2019-08-19T15:09:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.cpb.utilities.Utilities -->
       <class name="com.cpb.testcases.LoginTest">
-        <test-method status="PASS" signature="check()[pri:0, instance:com.cpb.testcases.LoginTest@b62d79]" name="check" duration-ms="5" started-at="2019-08-15T18:45:20Z" finished-at="2019-08-15T18:45:20Z">
+        <test-method status="PASS" signature="check()[pri:0, instance:com.cpb.testcases.LoginTest@702b8b12]" name="check" duration-ms="7" started-at="2019-08-19T15:09:42Z" finished-at="2019-08-19T15:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check -->

@@ -78,7 +78,7 @@ public class TestBase {
 				driver = new ChromeDriver();
 				
 			} else if (config.getProperty("browser").equals("ie")) {
-				WebDriverManager.iedriver().setup();
+				 WebDriverManager.iedriver().setup();
 				 DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
 				 caps.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
 

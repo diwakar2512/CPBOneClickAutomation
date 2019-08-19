@@ -36,6 +36,9 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.relevantcodes/extentreports
 	compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
 	
+	// https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-testng-utils
+	compile group: 'org.apache.maven.surefire', name: 'surefire-testng-utils', version: '2.18.1'
+
 	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
 	//compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
 	// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
@@ -68,6 +71,8 @@ dependencies {
 	compile group: 'com.google.guava', name: 'guava', version: '27.1-jre'
    
 }
+
+
 
 test {
     useTestNG {
