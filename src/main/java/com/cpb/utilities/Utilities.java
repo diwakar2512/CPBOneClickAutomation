@@ -84,4 +84,31 @@ public class Utilities extends TestBase {
 		return false;
 	}
 	
+public static boolean isTestSheetRowRunnable(String RowId, String sheetName, ExcelReader excel){
+		
+		//String sheetName="test_suite";
+		int rows = excel.getRowCount(sheetName);
+		boolean blnResult = false;
+		
+		for(int rNum=2; rNum<=rows; rNum++){
+			
+			String testCase = excel.getCellData(sheetName, RowId, rNum);
+			
+			if(testCase.equalsIgnoreCase(RowId)){
+				
+				String runmode = excel.getCellData(sheetName, "Runmode", rNum);
+				
+				if(runmode.equalsIgnoreCase("Y"))
+					blnResult = true;
+					//return true;
+				else
+					blnResult = false;
+			}
+			
+			
+		}
+		return blnResult;
+	}
+	
+	
 }

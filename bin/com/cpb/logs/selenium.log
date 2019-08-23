@@ -1,0 +1,10 @@
+13:48:52,402 DEBUG devpinoyLogger:52 - Config file loaded !!!
+13:48:52,404 DEBUG devpinoyLogger:52 - Config file loaded !!!
+13:48:52,446 DEBUG devpinoyLogger:52 - Config file loaded !!!
+13:48:52,473 DEBUG devpinoyLogger:52 - Config file loaded !!!
+13:49:01,333 DEBUG devpinoyLogger:100 - Navigated to : https://ui.freecrm.com/
+13:49:10,186 DEBUG devpinoyLogger:100 - Navigated to : https://ui.freecrm.com/
+13:49:13,232 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+13:49:13,233 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down
+13:49:19,899 DEBUG devpinoyLogger:100 - Navigated to : https://ui.freecrm.com/
+13:49:28,893 DEBUG devpinoyLogger:100 - Navigated to : https://ui.freecrm.com/

@@ -16,6 +16,8 @@ repositories {
     jcenter()
 }
 
+ 
+ //File configFile = file('src/test/resources/com/cpb/properties/log4j.properties')
 dependencies {
    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
@@ -49,7 +51,7 @@ dependencies {
 	// https://mvnrepository.com/artifact/dom4j/dom4j
 	compile group: 'dom4j', name: 'dom4j', version: '1.6.1'
 	// https://mvnrepository.com/artifact/org.uncommons/reportng
-	testCompile group: 'org.uncommons', name: 'reportng', version: '1.1.4'
+	//testCompile group: 'org.uncommons', name: 'reportng', version: '1.1.4'
 	// https://mvnrepository.com/artifact/com.google.inject/guice
 	compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
 	// https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
@@ -71,8 +73,6 @@ dependencies {
 	compile group: 'com.google.guava', name: 'guava', version: '27.1-jre'
    
 }
-
-
 
 test {
     useTestNG {

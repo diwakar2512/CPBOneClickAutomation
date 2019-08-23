@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 //import org.apache.logging.log4j.*;
 import org.apache.log4j.Logger;
+//import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -27,15 +28,15 @@ public class TestBase {
 	public static Properties config = new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
+	
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\com\\cpb\\testdata\\testdata.xlsx");
 	public static WebDriverWait wait;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static String browser;
-
-	@BeforeSuite
-	public void setUp() {
+	//@BeforeSuite
+	public TestBase() {
 
 		if (driver == null) {
 
@@ -53,6 +54,11 @@ public class TestBase {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		//this.driver=driver;
+		//initialization();
+	}
+			public static void initialization(){
 			
 			if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty()){
 				
@@ -98,14 +104,14 @@ public class TestBase {
 			wait = new WebDriverWait(driver, 5);
 		}
 
-	}
-	@AfterSuite
-	public void tearDown() {
+	
+	//@AfterSuite
+	/*public void tearDown() {
 
 		if (driver != null) {
 			driver.quit();
 		}
 
 		log.debug("Execution completed !!!");
-	}
+	}*/
 }

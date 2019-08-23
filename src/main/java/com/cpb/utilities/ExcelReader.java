@@ -99,7 +99,7 @@ public class ExcelReader {
 		if(cell==null)
 			return "";
 	
-		if(cell.getCellType()== CellType.NUMERIC)
+		if(cell.getCellType()== CellType.STRING)
 			  return cell.getStringCellValue();
 		else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA ){
 			  
@@ -507,20 +507,6 @@ public class ExcelReader {
 	    }
 		return -1;
 		
-	}
-		
-	
-	// to run this on stand alone
-	public static void main(String arg[]) throws IOException{
-		
-		
-		ExcelReader datatable = null;
-		
-
-			 datatable = new ExcelReader("C:\\CM3.0\\app\\test\\Framework\\AutomationBvt\\src\\config\\xlfiles\\Controller.xlsx");
-				for(int col=0 ;col< datatable.getColumnCount("TC5"); col++){
-					System.out.println(datatable.getCellData("TC5", col, 1));
-				}
 	}
 	
 	
