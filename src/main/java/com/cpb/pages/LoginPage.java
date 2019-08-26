@@ -2,6 +2,7 @@ package com.cpb.pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -11,9 +12,11 @@ public class LoginPage extends TestBase {
 		
 		//Page Factory - OR:
 		@FindBy(name="email")
+		@CacheLookup
 		WebElement username;
 		
 		@FindBy(name="password")
+		@CacheLookup
 		WebElement password;
 		
 		//@FindBy(xpath="//input[@type='Login']")
@@ -32,7 +35,7 @@ public class LoginPage extends TestBase {
 		}
 		//<div class="ui fluid large blue submit button">Login</div>
 		
-		public void login(String un, String pwd){
+		public void loginCredential(String un, String pwd){
 			username.sendKeys(un);
 			password.sendKeys(pwd);
 			//loginBtn.click();

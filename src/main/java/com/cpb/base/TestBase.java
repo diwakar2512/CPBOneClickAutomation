@@ -49,7 +49,7 @@ public class TestBase {
 			}
 			try {
 				config.load(fis);
-				log.debug("Config file loaded !!!");
+				//log.debug("Config file loaded !!!");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -97,7 +97,7 @@ public class TestBase {
 			}
 
 			driver.get(config.getProperty("testsiteurl"));
-			log.debug("Navigated to : " + config.getProperty("testsiteurl"));
+			//log.debug("Navigated to : " + config.getProperty("testsiteurl"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);

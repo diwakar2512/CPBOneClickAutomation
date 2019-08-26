@@ -1,85 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38402" started-at="2019-08-23T17:48:52Z" finished-at="2019-08-23T17:49:30Z">
+  <suite name="Default suite" duration-ms="11517" started-at="2019-08-26T17:34:04Z" finished-at="2019-08-26T17:34:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38402" started-at="2019-08-23T17:48:52Z" finished-at="2019-08-23T17:49:30Z">
+    <test name="Default test" duration-ms="11517" started-at="2019-08-26T17:34:04Z" finished-at="2019-08-26T17:34:15Z">
       <class name="com.cpb.testcases.LoginTest">
-        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="setUpMetod" is-config="true" duration-ms="9977" started-at="2019-08-23T13:48:52Z" finished-at="2019-08-23T13:49:02Z">
+        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@63a12c68]" name="setUpMetod" is-config="true" duration-ms="10279" started-at="2019-08-26T13:34:04Z" finished-at="2019-08-26T13:34:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMetod -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="loginTest" duration-ms="7" started-at="2019-08-23T13:49:02Z" data-provider="dp" finished-at="2019-08-23T13:49:02Z">
+        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpb.testcases.LoginTest@63a12c68]" name="testlogin" duration-ms="294" started-at="2019-08-26T13:34:14Z" data-provider="passData" finished-at="2019-08-26T13:34:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=cd, RowId=1.0, runmode=Y, username=ab}]]>
+                <![CDATA[row1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ab]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="tearDownMethod" is-config="true" duration-ms="810" started-at="2019-08-23T13:49:02Z" finished-at="2019-08-23T13:49:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="setUpMetod" is-config="true" duration-ms="8039" started-at="2019-08-23T13:49:03Z" finished-at="2019-08-23T13:49:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMetod -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="loginTest" duration-ms="3" started-at="2019-08-23T13:49:11Z" data-provider="dp" finished-at="2019-08-23T13:49:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, RowId=, runmode=, username=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="tearDownMethod" is-config="true" duration-ms="983" started-at="2019-08-23T13:49:11Z" finished-at="2019-08-23T13:49:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="setUpMetod" is-config="true" duration-ms="8724" started-at="2019-08-23T13:49:12Z" finished-at="2019-08-23T13:49:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMetod -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="loginTest" duration-ms="5" started-at="2019-08-23T13:49:21Z" data-provider="dp" finished-at="2019-08-23T13:49:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, RowId=, runmode=, username=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="tearDownMethod" is-config="true" duration-ms="1069" started-at="2019-08-23T13:49:21Z" finished-at="2019-08-23T13:49:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="setUpMetod" is-config="true" duration-ms="7931" started-at="2019-08-23T13:49:22Z" finished-at="2019-08-23T13:49:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMetod -->
-        <test-method status="PASS" signature="loginTest(java.util.Hashtable)[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="loginTest" duration-ms="6" started-at="2019-08-23T13:49:30Z" data-provider="dp" finished-at="2019-08-23T13:49:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, RowId=, runmode=, username=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@7bab3f1a]" name="tearDownMethod" is-config="true" duration-ms="788" started-at="2019-08-23T13:49:30Z" finished-at="2019-08-23T13:49:30Z">
+        </test-method> <!-- testlogin -->
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@63a12c68]" name="tearDownMethod" is-config="true" duration-ms="874" started-at="2019-08-26T13:34:15Z" finished-at="2019-08-26T13:34:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->

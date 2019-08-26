@@ -1,4 +1,5 @@
 package com.cpb.testcases;
+import java.io.IOException;
 import java.util.Hashtable;
 
 import org.testng.Assert;
@@ -16,7 +17,7 @@ public class LoginTest extends TestBase {
 	//}
 	//LoginPage loginPage;
 	MainPage mainPage;
-	LoginPage loginPage = new LoginPage();
+	LoginPage login;
 	public LoginTest(){
 		super();
 		//loginPage = new LoginPage();
@@ -28,7 +29,22 @@ public class LoginTest extends TestBase {
 			
 	}
 	
-	@Test(dataProviderClass=Utilities.class,dataProvider="dp")
+	@DataProvider
+    public Object [][] passData() throws IOException
+    {
+	 Object NewTestData[][] =Utilities.xcelreder("LoginTest");
+	 return NewTestData;
+    }
+	
+	@Test(dataProvider ="passData")
+	public void testlogin(String Row_id,String username,String password) throws IOException
+	{
+		System.out.println("Row_ID is "+Row_id);
+		login=new LoginPage();
+		login.loginCredential(username,password);
+	}
+	
+	/*@Test(dataProviderClass=Utilities.class,dataProvider="dp")
 	//public void loginTest(String Username , String Password) throws InterruptedException{
 		public void loginTest(Hashtable<String,String> data) throws InterruptedException{
 		if((Utilities.isTestRunnable("LoginTest", excel))){
@@ -42,7 +58,7 @@ public class LoginTest extends TestBase {
 			//throw new SkipException("Skipping the test case as the Run mode for data set is NO");
 		//}
 		  //loginPage.login(data.get("username"), data.get("password"));
-		}
+		}*/
 	//@Test(priority=2)
 	////public void loginPageTitleTest(){
 		//String title = loginPage.validateLoginPageTitle();
