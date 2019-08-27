@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11517" started-at="2019-08-26T17:34:04Z" finished-at="2019-08-26T17:34:15Z">
+  <suite name="Suite" duration-ms="341" started-at="2019-08-27T19:57:15Z" finished-at="2019-08-27T19:57:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11517" started-at="2019-08-26T17:34:04Z" finished-at="2019-08-26T17:34:15Z">
+    <test name="Test" duration-ms="341" started-at="2019-08-27T19:57:15Z" finished-at="2019-08-27T19:57:15Z">
       <class name="com.cpb.testcases.LoginTest">
-        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@63a12c68]" name="setUpMetod" is-config="true" duration-ms="10279" started-at="2019-08-26T13:34:04Z" finished-at="2019-08-26T13:34:14Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.cpb.testcases.LoginTest@6e509ffa]" name="SetUp" is-config="true" duration-ms="8877" started-at="2019-08-27T19:57:06Z" finished-at="2019-08-27T19:57:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="setUpMetod()[pri:0, instance:com.cpb.testcases.LoginTest@6e509ffa]" name="setUpMetod" is-config="true" duration-ms="31" started-at="2019-08-27T19:57:15Z" finished-at="2019-08-27T19:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMetod -->
-        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpb.testcases.LoginTest@63a12c68]" name="testlogin" duration-ms="294" started-at="2019-08-26T13:34:14Z" data-provider="passData" finished-at="2019-08-26T13:34:15Z">
+        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cpb.testcases.LoginTest@6e509ffa]" name="testlogin" duration-ms="242" started-at="2019-08-27T19:57:15Z" data-provider="passData" finished-at="2019-08-27T19:57:15Z">
           <params>
             <param index="0">
               <value>
@@ -32,11 +36,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@63a12c68]" name="tearDownMethod" is-config="true" duration-ms="874" started-at="2019-08-26T13:34:15Z" finished-at="2019-08-26T13:34:15Z">
+        <test-method status="PASS" signature="tearDownMethod()[pri:0, instance:com.cpb.testcases.LoginTest@6e509ffa]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2019-08-27T19:57:15Z" finished-at="2019-08-27T19:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.cpb.testcases.LoginTest@6e509ffa]" name="tearDown" is-config="true" duration-ms="802" started-at="2019-08-27T19:57:16Z" finished-at="2019-08-27T19:57:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.cpb.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

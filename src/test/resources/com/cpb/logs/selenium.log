@@ -1,0 +1,13 @@
+15:57:06,768 DEBUG devpinoyLogger:52 - Config file loaded !!!
+15:57:14,487 DEBUG devpinoyLogger:84 - Navigated to : https://ui.freecrm.com/
+15:57:16,809 DEBUG devpinoyLogger:99 - Execution completed !!!
+15:57:17,089 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:57:17,090 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:57:17,091 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:57:17,092 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:57:17,092 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/diwakuma/.gradle/caches/modules-2/files-2.1/com.relevantcodes/extentreports/2.41.2/f3cfee1e734668ac4e3574a9b47ad735476b4b04/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+15:57:17,348 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:57:17,348 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:57:17,348 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:57:17,349 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:57:17,349 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/diwakuma/.gradle/caches/modules-2/files-2.1/com.relevantcodes/extentreports/2.41.2/f3cfee1e734668ac4e3574a9b47ad735476b4b04/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

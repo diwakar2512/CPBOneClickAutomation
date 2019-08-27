@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cpb.testcases.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-15T20:41:29" hostname="LNAR-PB01AJST" time="0.008">
-  <properties/>
-  <testcase name="check" classname="com.cpb.testcases.LoginTest" time="0.008"/>
-  <system-out><![CDATA[new
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

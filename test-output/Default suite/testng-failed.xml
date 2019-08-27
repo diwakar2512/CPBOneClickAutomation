@@ -5,7 +5,9 @@
     <classes>
       <class name="com.cpb.testcases.LoginTest">
         <methods>
-          <include name="testlogin"/>
+          <include name="tearDownMethod"/>
+          <include name="testlogin" invocation-numbers="0"/>
+          <include name="setUpMetod"/>
         </methods>
       </class> <!-- com.cpb.testcases.LoginTest -->
     </classes>

@@ -8,12 +8,20 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
+    //maven { url "http://repo.experitest.com:8010/Maven2/" }
+    //maven { url "http://repo.maven.apache.org/maven2" }
+	//maven { url "http://mvnrepository.com/maven2" }
+	//maven { url “http://repo.maven.apache.org/maven2” }
+	//maven { url ‘http://mvnrepository.com/maven2’ }
 }
 
  
@@ -22,7 +30,7 @@ dependencies {
    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
 	compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
    // https://mvnrepository.com/artifact/org.testng/testng
-    compile group: 'org.testng', name: 'testng', version: '6.10'
+    compile group: 'org.testng', name: 'testng', version: '6.14.3'
    
    // https://mvnrepository.com/artifact/org.apache.poi/poi
 	compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'

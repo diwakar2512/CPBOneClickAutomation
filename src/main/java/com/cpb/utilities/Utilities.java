@@ -115,41 +115,5 @@ public static boolean isTestSheetRowRunnable(String RowId, String sheetName, Exc
 	
 
 
-	public static Object[][] xcelreder(String SheetName) throws IOException
-
-	{
-		FileInputStream fi = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\com\\cpb\\testdata\\testdata.xlsx");
-		XSSFWorkbook TestBook = new XSSFWorkbook(fi);
-		XSSFSheet TestSheet = TestBook.getSheet(SheetName);
-		Object[][] TestDataObject = new Object[TestSheet.getLastRowNum()][TestSheet.getRow(0).getLastCellNum()];
-		for (int i = 0; i < TestSheet.getLastRowNum(); i++) {
-			for (int j = 0; j < TestSheet.getRow(0).getLastCellNum(); j++) {
-				TestDataObject[i][j] = TestSheet.getRow(i + 1).getCell(j).toString();
-			}
-		}
-
-		return TestDataObject;
-	}
 	
-	public static Object[][] SingleRowreder(String SheetName, int Row_ID) throws IOException
-
-	{
-		FileInputStream fi = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\com\\cpb\\testdata\\testdata.xlsx");
-		XSSFWorkbook TestBook = new XSSFWorkbook(fi);
-		XSSFSheet TestSheet = TestBook.getSheet(SheetName);
-		int columnLength = TestSheet.getRow(0).getLastCellNum();
-	
-		Object[][] TestDataObject = new Object[1][columnLength];
-		for (int i = 0; i < columnLength; i++)
-		{
-			TestDataObject[0][i] = TestSheet.getRow(Row_ID).getCell(i).toString();
-		}
-		
-		
-
-		return TestDataObject;
-	}
-
 }

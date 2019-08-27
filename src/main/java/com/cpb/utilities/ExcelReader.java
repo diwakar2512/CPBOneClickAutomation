@@ -509,5 +509,40 @@ public class ExcelReader {
 		
 	}
 	
+	public  Object[][] xlreader(String SheetName) throws IOException
+
+	{
+		fis = new FileInputStream(path); 
+		workbook = new XSSFWorkbook(fis);
+		sheet = workbook.getSheet(SheetName);
+		Object[][] TestDataObject = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+			for (int j = 0; j < sheet.getRow(0).getLastCellNum(); j++) {
+				TestDataObject[i][j] = sheet.getRow(i + 1).getCell(j).toString();
+			}
+		}
+
+		return TestDataObject;
+	}
+	
+	public  Object[][] SingleRowreader(String SheetName, int Row_ID) throws IOException
+
+	{
+		fis = new FileInputStream(path); 
+		workbook = new XSSFWorkbook(fis);
+		sheet = workbook.getSheet(SheetName);
+		int columnLength = sheet.getRow(0).getLastCellNum();
+	
+		Object[][] TestDataObject = new Object[1][columnLength];
+		for (int i = 0; i < columnLength; i++)
+		{
+			TestDataObject[0][i] = sheet.getRow(Row_ID).getCell(i).toString();
+		}
+		
+		
+
+		return TestDataObject;
+	}
+
 	
 }

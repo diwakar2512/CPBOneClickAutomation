@@ -8,31 +8,29 @@ import org.testng.annotations.*;
 
 import com.cpb.base.TestBase;
 import com.cpb.pages.MainPage;
+import com.cpb.utilities.ExcelReader;
 import com.cpb.utilities.Utilities;
 import com.cpb.pages.LoginPage;
 public class LoginTest extends TestBase {
-	//@Test
-	//public void check() {
-		//System.out.println("new");
-	//}
-	//LoginPage loginPage;
-	MainPage mainPage;
+	
 	LoginPage login;
+	//ExcelReader excel = new ExcelReader(null);
+	//MainPage mainPage;
+	//LoginPage login = new LoginPage();
+	//LoginPage login =new LoginPage();;
 	public LoginTest(){
 		super();
-		//loginPage = new LoginPage();
 	}
 	
 	@BeforeMethod
 	public void setUpMetod(){
-		initialization();
-			
+		login=new LoginPage();	
 	}
 	
 	@DataProvider
     public Object [][] passData() throws IOException
     {
-	 Object NewTestData[][] =Utilities.xcelreder("LoginTest");
+	 Object NewTestData[][] =excel.xlreader("LoginTest");
 	 return NewTestData;
     }
 	
@@ -40,7 +38,6 @@ public class LoginTest extends TestBase {
 	public void testlogin(String Row_id,String username,String password) throws IOException
 	{
 		System.out.println("Row_ID is "+Row_id);
-		login=new LoginPage();
 		login.loginCredential(username,password);
 	}
 	
@@ -75,7 +72,7 @@ public class LoginTest extends TestBase {
 	
 	@AfterMethod
 	public void tearDownMethod(){
-		driver.quit();
+		//driver.quit();
 	}
 	
 	
