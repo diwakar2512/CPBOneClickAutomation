@@ -7,7 +7,6 @@ import org.testng.SkipException;
 import org.testng.annotations.*;
 
 import com.cpb.base.TestBase;
-import com.cpb.pages.MainPage;
 import com.cpb.utilities.ExcelReader;
 import com.cpb.utilities.Utilities;
 import com.cpb.pages.LoginPage;

@@ -16,10 +16,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 //import com.aventstack.extentreports.*;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
+//import com.relevantcodes.extentreports.ExtentReports;
+//import com.relevantcodes.extentreports.ExtentTest;
 import com.cpb.utilities.ExcelReader;
-import com.cpb.utilities.ExtentManager;
+//import com.cpb.utilities.ExtentManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -27,12 +27,9 @@ public class TestBase {
 	public static Properties config = new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
-	
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\com\\cpb\\testdata\\testdata.xlsx");
 	public static WebDriverWait wait;
-	//public ExtentReports rep = ExtentManager.getInstance();
-	//public static ExtentTest test;
 	public static String browser;
 	@SuppressWarnings("deprecation")
 	@BeforeSuite
